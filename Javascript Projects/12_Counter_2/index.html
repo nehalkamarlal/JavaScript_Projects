@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Counter Project Nehal Kumar Lal</title>
+    </head>
+    <style>
+        .count{
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+
+        }
+        #value
+        {
+            font-size: 5rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .btn{
+
+            padding: 10px 15px ;
+            border: 1px solid red;
+            background-color: rgb(89, 174, 146);
+            color: white;
+
+        }
+        .btn-container{
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+        .btn:hover{
+            background-color: black;
+            
+        }
+    </style>
+    <body>
+        <div class="container">
+            <h1 class="count">Counter</h1>
+            <span id="value">0</span>
+            <div class="btn-container">
+                <div class="btn increase">
+                    Increase
+                </div>
+                <div class="btn reset">
+                    Reset
+                </div>
+                <div class="btn decrease">
+                    Decrease
+                </div>
+
+            </div>
+        </div>
+        <script>
+            const value=document.getElementById('value');
+            const btn=document.querySelectorAll('.btn');
+              let count=0;
+            btn.forEach((btn)=>{
+                btn.addEventListener('click',(e)=>{
+                    const style=e.currentTarget.classList;
+                    // console.log(style);
+                    if(style.contains("decrease")){
+                        count--;
+                    }
+                    else if(style.contains("increase")){
+                        count++;
+                    }
+                    
+                    else{
+                        count=0;
+                    }
+                    if(count>0){
+                        value.style.color='Green';
+                    }
+                    else if(count<0){
+                        value.style.color='red';
+                    }
+                    else{
+                        value.style.color='yellow';
+                    }
+                    value.textContent=count;
+                })
+                
+            })
+
+        </script>
+    </body>
+</html>

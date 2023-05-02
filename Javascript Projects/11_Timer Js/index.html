@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Timer Project In Js Nehal Kumar Lal</title>
+    </head>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+            .container{
+                height: 80vh;
+                background-color: darkgrey;
+                /* display: flex;
+                justify-content: center;
+                align-items: center; */
+            }
+            #stop:hover{
+                          background-color: red;
+                          color: white;
+            }
+            .head{
+                font-size: 3rem;
+                color: hwb(246 4% 5% / 0.963);
+                text-align: center;
+            }
+            #time-1,#time-2,#time-3{
+                font-size: 6rem;
+                color: hwb(101 4% 5% / 0.963);
+                
+            }
+            .content{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+            }
+            button{
+                padding: 20px 40px;
+                border: 2px solid yellow;
+
+            }
+            #start:hover{
+                background-color: green;
+                color: white;
+            }
+            #reset:hover{
+                background-color:blueviolet;
+                color: white;
+            }
+            .timing{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+    </style>
+    <body>
+        <div class="container" id="container">
+            <p id="head" class="head">Timer</p>
+            <div class="timing">
+                <p id="time-1">00:</p>
+                <p id="time-2">00:</p>
+                <p id="time-3">00</p>
+            </div>
+            <div class="content">
+                <button id="start">Start</button>
+                <button id="stop">Stop</button>
+                <button id="reset">Reset</button>
+            </div>
+            <p id="error"></p>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

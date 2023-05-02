@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FAQ page Creater Nehal Kumar Lal</title>
+    </head>
+    <script src="https://kit.fontawesome.com/a0536b0f9b.js"
+        crossorigin="anonymous"></script>
+    <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .container{
+                height: 100vh;
+                background-color: rgb(230, 225, 225);
+            }
+            .title{
+                text-align: center;
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+            }
+            .box-main{
+                
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+               justify-content: center;
+               align-items: center;
+             
+            }
+            .paras-1.active{
+                position: absolute;
+                left: 10% ;
+                top: 70%;
+                font-size: 14px;
+                font-weight: 600;
+            }
+            .paras-2.active{
+                position: absolute;
+                left: 10% ;
+                top: 70%;
+                font-size: 14px;
+                font-weight: 600;
+            }
+            .active-main-1.active{
+                position: absolute;
+                top: 80%;
+                display: flex;
+                gap: 10px;
+            }
+            
+            .active-main-1{                
+                display: none;
+            }
+            .active-main-2.active{
+                position: absolute;
+                top: 80%;
+                display: flex;
+                gap: 10px;
+            }
+            
+            .active-main-2{                
+                display: none;
+            }
+            .active-main-3.active{
+                position: absolute;
+                top: 80%;
+                display: flex;
+                gap: 10px;
+            }
+            .active-main-3{                
+                display: none;
+            }
+            .paras-3.active{
+                position: absolute;
+                left: 10% ;
+                top: 70%;
+                font-size: 14px;
+                font-weight: 600;
+            }
+            .box{
+                margin-top: 10px;
+                display: flex;
+                width: 40%;
+                height: auto;
+                padding: 50px 20px;
+                background-color:white ;
+                box-shadow: 4px 4px 4px grey;
+                position: relative;
+            }
+            #faq{
+                margin-left: 300px;
+                cursor: pointer;
+            }
+            #faq-1{
+                margin-left: 340px;
+                cursor: pointer;
+            }
+            #faq-2{
+                margin-left: 340px;
+                cursor: pointer;
+            }
+            @media screen and(max-width:960px) {
+                .box{
+                margin-top: 10px;
+                display: flex;
+                width: 90%;
+                height: auto;
+                padding: 50px 20px;
+                background-color:white ;
+                box-shadow: 4px 4px 4px grey;
+                /* gap: 110px; */
+                position: relative;
+            }
+            #faq{
+                margin-left: 300px;
+                cursor: pointer;
+            }
+            #faq-1{
+                margin-left: 350px;
+                cursor: pointer;
+            }
+            #faq-2{
+                margin-left: 350px;
+                cursor: pointer;
+            }
+            }
+        </style>
+    <body>
+        <div class="container">
+            <h1 class="title">General Question</h1>
+            <div class="main-container">
+                <div class="box-main">
+                    <div class="box">
+                        <p class="para">Do You Accept All Major Credit Cards</p>
+                        <div class="active-main-1" id="active-main-1">
+                            <input type="text" name="" id="input-part-1"
+                                required>
+
+
+
+                            <i class="fa-solid fa-square-check" id="check-1"></i>
+                        </div>
+                        <i id="faq" class="fa-solid fa-square-plus"></i>
+                        <p id="paras-1" class="paras-1"></p>
+                    </div>
+
+                    <div class="box">
+                        <p class="para">Do You Support Local Farmers?
+                            <div class="active-main-2" id="active-main-2">
+                                <input type="text" name="" id="input-part-2"
+                                    required>
+                                <i class="fa-solid fa-square-check"
+                                    id="check-2"></i>
+
+                            </div>
+                            <i id="faq-1" class="fa-solid fa-square-plus"></i>
+                            <p id="paras-2" class="paras-2"></p>
+                        </div>
+                        <div class="box">
+                            <p class="para">Do You Use Organic Ingrdients?</p>
+                            <div class="active-main-3" id="active-main-3">
+                                <input type="text" name="" id="input-part-3"
+                                    required>
+
+                                <i class="fa-solid fa-square-check"
+                                    id="check-3"></i>
+                            </div>
+                            <i id="faq-2" class="fa-solid fa-square-plus"></i>
+                            <p id="paras-3" class="paras-3"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="script.js"></script>
+        </body>
+    </html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Side Bar Project Nehal Kumar Lal</title>
+    </head>
+    <script src="https://kit.fontawesome.com/a0536b0f9b.js"
+        crossorigin="anonymous"></script>
+    <style>
+            .first-head{
+                font-size: 2rem;
+                font-weight: 500;
+                color: black;
+            }
+            .second-head{
+                font-size: 1.8rem;
+                color:hsla(181, 91%, 55%, 0.975);
+            }
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .container{
+                height: 80vh;
+                background-color: darkgrey;
+                position: relative;                
+            }
+            #box-1{
+                position: absolute;
+                 right: 30px;
+                 top: 20px;            
+            }
+            a{
+                text-decoration: none;
+                color: #eee;
+                font-size: 1.2rem;
+                padding: 10px 15px;               
+            }
+            
+            .main-nav-links{
+                display: none;
+                
+            }
+            .main-nav-links.active{
+                display: block;
+               
+            }
+            nav{
+                background-color: cadetblue;
+                width: 60%;
+                height: 90%;
+              position: relative;  
+              box-shadow: 4px 4px 4px rgb(16, 53, 20);            
+            }            
+            #box-2{
+                position: absolute;
+                top: 17px;
+                right: 20px;
+            }
+            a:hover{               
+                background-color: rgb(37, 40, 40);
+            }
+            .nav-link{
+                margin-top:15px ;
+            
+            }
+            ul {
+             list-style: none;
+             display: flex;
+            justify-content: center;
+            align-items: flex-start;
+             gap: 30px;
+             flex-direction: column;
+            }
+             @media screen and (min-width:530px){
+                nav{
+                background-color: cadetblue;
+                width: 45%;
+                height: 100%;
+                position: relative;              
+            }
+            
+             }
+              
+        </style>
+    <body>
+        <div class="container">
+            <i id="box-1" class="fa-solid fa-bars"></i>
+            <nav class="main-nav-links" id="main-nav-links">
+                <header><span class="first-head">Coding</span> <span
+                        class="second-head">Addict</span></header>
+
+                <i id="box-2" class="fa-solid fa-delete-left"></i>
+                <div class="nav-link">
+                    <ul>
+                        <li><a href="#">Home</a>
+                        </li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#Projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav
+        </div>
+    </body>
+    <script>
+              const boxFirst=document.getElementById('box-1');
+              const boxSecond=document.getElementById('box-2');
+              const navLinks=document.getElementById('main-nav-links');
+              boxFirst.addEventListener('click',()=>{
+                 navLinks.classList.add('active');
+              })
+              boxSecond.addEventListener('click',()=>{
+                navLinks.classList.remove('active');
+              })
+    </script>
+</html>

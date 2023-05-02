@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Counter Variable project Nehal Kumar Lal </title>
+    </head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 70vh;
+            width: auto;
+            background-color: cadetblue;
+            
+        }
+       .counter{
+            font-size: 3rem;
+            text-align: center;
+       }
+       button{
+        margin-top: 20px;
+        padding: 20px 40px;
+        border: 2px;
+        font-size: 1rem;
+       }
+       #positive:hover{
+                background-color: green;
+                border: 1px solid yellow;
+                color: white;
+       }
+       #negative:hover{
+        background-color: red;
+        border: 1px solid purple;
+       }
+       .content{
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             gap: 20px;
+       }
+       #count{
+        text-align: center;
+        font-size: 8rem;
+        font-family: cursive;
+        color:mediumblue;
+       }
+    </style>
+    <body>
+        <div class="container" id="container">
+            <p id="counter" class="counter">Counter:</p>
+            <p id="count">0</p>
+            <div class="content" id="content">
+                <button id="positive">Increment</button>
+                <button id="clear">Reset</button>
+                <button id="negative">Decrement</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

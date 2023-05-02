@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{ 
+    height: 100vh;
+    background-color: beige;
+}
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.title{
+    text-align: center;
+    font-size: 25px;
+    color:rgb(107, 105, 49);
+    font-family:cursive;
+}
+.box{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;        
+      width: 70vh;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      background-color: coral;
+      box-shadow: 4px 4px 4px gray;
+    } 
+    .ist-para{
+        margin-inline: 10px 10px;
+        font-size: 18px;
+        font-weight: 600;
+        position: relative;
+        padding: 20px;
+    }
+    #plus-1{
+        position: absolute;
+        top: 40%;
+        left: 96%;
+        cursor: pointer;
+        animation: rotatingF 1s ease-in-out alternate infinite;
+    }
+    @keyframes rotatingF {
+        0%{
+            transform: rotate(0deg);
+        }
+        50%{
+            transform: rotate(90deg);
+        }
+        100%{
+            transform: rotate(180deg);
+        }
+    }
+    #minus-1{
+        position: absolute;
+        top: 40%;
+        left: 96%;
+        cursor: pointer;
+        animation: rotatingFm 1s ease-in-out alternate infinite;
+    }
+    @keyframes rotatingFm {
+        0%{
+            transform: rotate(0deg);
+        }
+        50%{
+            transform: rotate(90deg);
+        }
+        100%{
+            transform: rotate(180deg);
+        }
+    }
+    .sec-para{
+        margin-inline: 10px 10px;
+        font-size: 18px;
+        font-weight: 600;
+        position: relative;
+        padding: 20px;
+    }
+    #plus-2{
+        position: absolute;
+        top: 40%;
+        left: 96%;
+        cursor: pointer;
+        animation: rotatingS 1s ease-in-out alternate-reverse infinite;
+    }
+    @keyframes rotatingS {
+        0%{
+            transform: rotate(0deg);
+        }
+        50%{
+            transform: rotate(90deg);
+        }
+        100%{
+            transform: rotate(180deg);
+        }
+    }
+    #minus-2{
+        position: absolute;
+        top: 40%;
+        left: 96%;
+        cursor: pointer;
+        animation: rotatingSm 1s ease-in-out alternate infinite;
+    }
+    @keyframes rotatingSm {
+        0%{
+            transform: rotate(0deg);
+        }
+        50%{
+            transform: rotate(90deg);
+        }
+        100%{
+            transform: rotate(180deg);
+        }
+    }
+    .thir-para{
+        margin-inline: 10px 10px;
+        font-size: 18px;
+        font-weight: 600;
+        position: relative;
+        padding: 20px;
+    }
+    #plus-3{
+        position: absolute;
+        top: 40%;
+        left: 96%;
+        cursor: pointer;
+        animation: rotatingT 1s ease-in-out reverse infinite;
+    }
+    @keyframes rotatingT {
+        0%{
+            transform: rotate(0deg);
+        }
+        50%{
+            transform: rotate(90deg);
+        }
+        100%{
+            transform: rotate(180deg);
+        }
+    }
+    #minus-3{
+        position: absolute;
+        top: 40%;
+        left: 96%;
+        cursor: pointer;
+        animation: rotatingTm 1s ease-in-out alternate-reverse infinite;
+    }   
+    @keyframes rotatingTm {
+        0%{
+            transform: rotate(0deg);
+        }
+        50%{
+            transform: rotate(90deg);
+        }
+        100%{
+            transform: rotate(180deg);
+        }
+    }              
+    .descrip{
+        margin-inline: 10px 10px;
+        margin-top:10px;
+    }
+.box-container-1{
+         display: none;
+}
+.box-container-1.active{
+    display: block;
+    border-top: 1px solid black;
+}
+#minus-1{
+    display: none;
+}
+#minus-1.active{
+    display: block;
+}
+#plus-1.active-1{
+    display: none;
+}
+#minus-2{
+    display: none;
+}
+#minus-2.active{
+    display: block;
+}
+#plus-2.active-1{
+    display: none;
+}
+#minus-3{
+    display: none;
+}
+#minus-3.active{
+    display: block;
+}
+#plus-3.active-1{
+    display: none;
+}
+.box-container-2{
+         display: none;
+}
+.box-container-2.active{
+    display: block;
+    border-top: 1px solid black;
+
+}
+.box-container-3{
+         display: none;
+}
+.box-container-3.active{
+    display: block;
+    border-top: 1px solid black;
+
+}

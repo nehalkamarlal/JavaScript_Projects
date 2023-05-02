@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Set timer Project Nehal Kumar</title>
+    </head>
+    <style>
+         *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+            .container{
+                height: 80vh;
+                background-color: darkgrey;
+                
+            }
+            .head{
+                font-size: 3rem;
+                color: hwb(246 4% 5% / 0.963);
+                text-align: center;
+            }
+            input{
+                padding: 10px 10px;
+                font-size: 8px;
+                margin-top: 20px;   
+                font-size: 18px;
+                border: 2px solid green;
+                width: 170px;             
+            }
+            .info{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+            }
+            .timing{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+            }
+            #min-count,#sec-count{
+                font-size: 4rem;
+                text-align: center;
+                font-family: cursive;
+            }
+            button{
+                padding: 20px 40px;
+            }
+            #start:hover{
+                background-color: green;
+                color: white;
+            }
+            #reset:hover{
+                background-color: blueviolet;
+                color: white;
+            }
+            #stop:hover{
+                background-color: red;
+                color: white;
+            }
+            .group{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+            }
+    </style>
+    <body>
+        <div class="conatainer">
+            <p class="head" style="font-family: sans-serif;">Set Timer</p>
+            <div class="info">
+                Minutes: <input type="number" name="min" placeholder="0"
+                    id="min">
+                Seconds:<input type="number" name="sec" id="sec"
+                    placeholder="0">
+            </div>
+            <div class="timing">
+                <p id="min-count">00:</p>
+                <p id="sec-count">00</p>
+            </div>
+            <div class="group">
+                <button id="start">Start</button>
+                <button id="reset">Reset</button>
+                <button id="stop">Stop</button>
+            </div>
+            <p id="demo"></p>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

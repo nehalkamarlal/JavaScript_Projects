@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: beige;
+}
+.container{
+    height: 100vh;
+
+}
+.title_h{
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 50px;
+    color: rgb(16, 21, 74);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.underline{    
+    width: 60px;
+    height: 2px;
+    background-color:darksalmon;
+}
+.btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+button{    
+    padding: 2px 3px ;
+    border-color: burlywood;
+    border-radius: 4px;
+    color:#7e6536a8 ;
+}
+button:hover{
+    color: white;
+    background-color: #7e6536a8;
+}
+.product{
+   margin-top: 30px;
+   display: grid;
+   grid-template-columns: repeat(2,0fr);
+   justify-content: center;
+   align-items: center;
+   gap: 20px 30px;
+}
+#image{
+    width: 170px;
+    height: 120px;
+    border: 1px solid rgb(233, 200, 152);
+    background-color: gray;
+}
+.menu-item{
+    display: flex;
+    width: 100%;
+    margin-inline: 10px 10px;
+}
+.head{
+      display: flex;
+      justify-content:flex-start;
+      gap: 100px;
+      margin-inline:5px 0;
+      margin-top: 7px;
+      border-bottom: 1px solid rgb(230, 227, 227);      
+}
+.title{
+    color: rgb(28, 4, 112);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+.price{
+    color: burlywood;
+    letter-spacing: 1.7px;
+}
+.item-text{
+    color: rgb(119, 119, 219);
+    font-size: 14px;    
+    margin-inline: 5px;
+    margin-top: 6px;
+}

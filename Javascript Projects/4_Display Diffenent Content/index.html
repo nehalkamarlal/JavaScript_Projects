@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Display Different Content Nehal Kumar LAl</title>
+    </head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+           .container{
+            height: 100vh;
+            background-color: beige;
+
+           }
+           .head{
+            text-align: center;
+            font-family: sans-serif;
+            margin-bottom: 7px;
+                  opacity: 0.9;
+           }
+
+           .paragraph{
+            text-align: center;
+             color: rgb(84, 158, 133);
+             letter-spacing: 0.3px;
+           }
+           .main-container{
+            margin-top: 70px;
+            height: 80vh;
+            background-color: blanchedalmond;
+            display: flex;
+            gap: 15px;
+           }
+           .left-side{
+            width: 50%;
+            height: 100%;
+            border-radius:10px ;
+            margin-inline: 10px 3px;
+            background-image: url(img2.jpg);
+           }
+           .right-side{
+            width: 50%;
+            height: 100%;
+            /* background-color: blue; */
+            margin-inline: 0 10px ;
+           }
+           ul{
+            list-style: none;
+            color: black;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            /* gap: 100px; */
+            background-color: rgb(164, 180, 234);
+           }
+           #goals{
+            position: relative;
+            right: -50px;
+           }
+           ul li{
+            align-self: center;
+               padding: 15px;
+               padding-right: 170px;
+               display: inline-block;
+               font-size: 15px;
+               cursor: pointer;
+               font-family: Verdana, Geneva, Tahoma, sans-serif;
+           }
+           ul li:active{
+            background-color: white;
+            color: black;
+            border: 1px solid skyblue;
+           }
+           .container-tag{
+            margin-inline: 25px 15px;
+
+           }
+           #heading-tag{
+            font-size: 17px;
+            margin-top: 20px;
+            color: #0b0b39;
+            margin-bottom: 10px;    
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+               }
+               #paragraph-tag{
+                     font-size: 15px;
+                      color: darkcyan;
+               }
+               #ownpara{
+                display: none;
+               }
+               .history.active{
+                background-color: white;
+            color: black;
+            border: 1px solid skyblue;
+
+               }
+               .vision.active{
+                background-color: white;
+            color: black;
+            border: 1px solid skyblue;
+
+               }
+               .goals.active{
+                background-color: white;
+            color: black;
+            border: 1px solid skyblue;
+
+               }
+               @media screen and (max-width:500px) {
+                
+                .main-container{
+            margin-top: 70px;
+            height: 240vh;
+            background-color: blanchedalmond;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+           }
+           .left-side{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius:10px ;
+            margin-inline: 10px 3px;
+            background-image: url(img2.jpg);
+           }
+           .right-side{
+            width: 100%;
+            height: 100%;
+            /* background-color: blue; */
+            margin-inline: 0 10px ;
+           }
+           ul{
+            list-style: none;
+            color: black;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 0px;
+            background-color: rgb(164, 180, 234);
+           }
+           ul li{
+               padding: 15px 30px;
+               display: inline-block;
+               font-size: 15px;
+               cursor: pointer;
+               font-family: Verdana, Geneva, Tahoma, sans-serif;
+           }
+               }
+               @media screen and (max-width:700px) and (min-width:501px) {
+                
+                .main-container{
+            margin-top: 70px;
+            height: 200vh;
+            background-color: blanchedalmond;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+           }
+           .left-side{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius:10px ;
+            margin-inline: 10px 3px;
+            background-image: url(img2.jpg);
+           }
+           .right-side{
+            width: 100%;
+            height: 100%;
+            /* background-color: blue; */
+            margin-inline: 0 10px ;
+           }
+           ul{
+            list-style: none;
+            color: black;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+            background-color: rgb(164, 180, 234);
+           }
+           ul li{
+               padding: 15px 40px;
+               display: inline-block;
+               font-size: 15px;
+               cursor: pointer;
+               font-family: Verdana, Geneva, Tahoma, sans-serif;
+           }
+               }
+               @media screen and (max-width:900px) and (min-width:701px) {
+                
+                .main-container{
+            margin-top: 70px;
+            height: 160vh;
+            background-color: blanchedalmond;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+           }
+           .left-side{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius:10px ;
+            margin-inline: 10px 3px;
+            background-image: url(img2.jpg);
+           }
+           .right-side{
+            width: 96%;
+            height: 100%;
+            /* background-color: blue; */
+            margin-inline: 0 10px ;
+           }
+           ul{
+            list-style: none;
+            color: black;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            /* gap: 60px; */
+            background-color: rgb(164, 180, 234);
+           }
+           ul li{
+               padding: 15px 145px;
+               display: inline-block;
+               font-size: 15px;
+               cursor: pointer;
+               font-family: Verdana, Geneva, Tahoma, sans-serif;
+           }
+               }
+    </style>
+    <body>
+        <div class="container">
+            <h1 class="head">About</h1>
+            <p class="paragraph">you will learn how to create tabs that will
+                display</p>
+            <div class="main-container" id="main-container">
+                <div class="left-side" id="left-side">
+                    <!-- <img id="myimg" src="" alt=""> -->
+                </div>
+                <div class="right-side" id="right-side">
+                    <div class="menu-bar" id="menu-bar">
+                        <ul class="menu-bar-decrip">
+                            <li class="history" id="history">History</li>
+                            <li class="vision" id="vision">Vision</li>
+                            <li class="goals" id="goals">goals</li>
+                        </ul>
+                        <div class="container-tag">
+                            <h2 id="heading-tag">History</h2>
+                            <p id="paragraph-tag">
+                                Nature is an important and integral part of
+                                mankind. It is one of the greatest blessings for
+                                human life; however, nowadays humans fail to
+                                recognize it as one. Nature has been an
+                                inspiration for numerous poets, writers, artists
+                                and more of yesteryears. This remarkable
+                                creation inspired them to write poems and
+                                stories in the glory of it. They truly valued
+                                nature which reflects in their works even today.
+                                Essentially, nature is everything we are
+                                surrounded by like the water we drink, the air
+                                we breathe, the sun we soak in, the birds we
+                                hear chirping, the moon we gaze at and more.
+                                Above all, it is rich and vibrant and consists
+                                of both living and non-living things. Therefore,
+                                people of the modern age should also learn
+                                something from people of yesteryear and start
+                                valuing nature before it gets too late.
+                                ature has been in existence long before humans
+                                and ever since it has taken care of mankind and
+                                nourished it forever. In other words, it offers
+                                us a protective layer which guards us against
+                                all kinds of damages and harms. Survival of
+                                mankind without nature is impossible and humans
+                                need to understand that.
+                                WebParagraph on Nature in 150
+                                Words. Nature is the ultimate source of our
+                                living. Both living and non-living things
+                                include nature, and everyone is interdependent,
+                                which helps maintain the ecosystem. Plants,
+                                animals, and humans all depend on nature for
+                                their survival.
+                                Nature is the creation of natural material and
+                                physical world on earth independent of the human
+                                activities.
+                                Everything we see around us constitutes nature,
+                                including the sun, the moon, trees, flowers,
+                                fruits, human beings, birds, animals, etc. In
+                                nature, everyone depends on one another to keep
+                                the ecosystem healthy. For survival, every
+                                creature is interrelated and reliant on one
+                                another. Humans, for example, rely on nature for
+                                their survival, and nature provides us with
+                                oxygen, food, water, shelter, medicines, and
+                                clothing, among other things. Many shades may be
+                                seen in nature, contributing to the planet’s
+                                beauty. Along with humans, animals and birds
+                                also find their habitat and means of survival in
+                                nature. Therefore, it is essential to take
+                                proper care of our nature to maintain a healthy
+                                life.
+                                If nature has the ability to protect us, it is
+                                also powerful enough to destroy the entire
+                                mankind. Every form of nature, for instance, the
+                                plants, animals, rivers, mountains, moon, and
+                                more holds equal significance for us. Absence of
+                                one element is enough to cause a catastrophe in
+                                the functioning of human life.
+
+                                We fulfill our healthy lifestyle by eating and
+                                drinking healthy, which nature gives us.
+                                Similarly, it provides us with water and food
+                                that enables us to do so. Rainfall and sunshine,
+                                the two most important elements to survive are
+                                derived from nature itself.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p id="ownpara">
+            Nature is the ultimate source of our
+            living. Both living and non-living things
+            include nature, and everyone is interdependent,
+            which helps maintain the ecosystem. Plants,
+            animals, and humans all depend on nature for
+            their survival.
+            Nature is the creation of natural material and
+            physical world on earth independent of the human
+            activities.
+            Everything we see around us constitutes nature,
+            including the sun, the moon, trees, flowers,
+            fruits, human beings, birds, animals, etc. In
+            nature, everyone depends on one another to keep
+            the ecosystem healthy. For survival, every
+            creature is interrelated and reliant on one
+            another. Humans, for example, rely on nature for
+            their survival, and nature provides us with
+            oxygen, food, water, shelter, medicines, and
+            clothing, among other things. Many shades may be
+            seen in nature, contributing to the planet’s
+            beauty. Along with humans, animals and birds
+            also find their habitat and means of survival in
+            nature. Therefore, it is essential to take
+            proper care of our nature to maintain a healthy
+            life.
+            Nature is an important and integral part of
+            mankind. It is one of the greatest blessings for
+            human life; however, nowadays humans fail to
+            recognize it as one. Nature has been an
+            inspiration for numerous poets, writers, artists
+            and more of yesteryears. This remarkable
+            creation inspired them to write poems and
+            stories in the glory of it. They truly valued
+            nature which reflects in their works even today.
+            Essentially, nature is everything we are
+            surrounded by like the water we drink, the air
+            we breathe, the sun we soak in, the birds we
+            hear chirping, the moon we gaze at and more.
+            Above all, it is rich and vibrant and consists
+            of both living and non-living things. Therefore,
+            people of the modern age should also learn
+            something from people of yesteryear and start
+            valuing nature before it gets too late.
+            ature has been in existence long before humans
+            and ever since it has taken care of mankind and
+            nourished it forever. In other words, it offers
+            us a protective layer which guards us against
+            all kinds of damages and harms. Survival of
+            mankind without nature is impossible and humans
+            need to understand that.
+
+            If nature has the ability to protect us, it is
+            also powerful enough to destroy the entire
+            mankind. Every form of nature, for instance, the
+            plants, animals, rivers, mountains, moon, and
+            more holds equal significance for us. Absence of
+            one element is enough to cause a catastrophe in
+            the functioning of human life.
+
+            We fulfill our healthy lifestyle by eating and
+            drinking healthy, which nature gives us.
+            Similarly, it provides us with water and food
+            that enables us to do so. Rainfall and sunshine,
+            the two most important elements to survive are
+            derived from nature itself.</p>
+        <script src="script.js"> </script>
+    </body>
+</html>

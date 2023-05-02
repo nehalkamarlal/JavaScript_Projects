@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+       }
+       main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+      .container{
+        
+        width: 55vh;
+        background-color: beige;
+        box-shadow: 4px 4px 4px gray;
+        margin-inline: 30px 30px ;
+      }
+    .title{
+        text-align: center;
+        margin-top: 0px;
+        letter-spacing: 2px;
+        text-decoration: underline;
+        color: hwb(289 3% 73% / 0.982);
+        margin-bottom: 40px;
+    }
+    .img-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    #myimg{
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        box-shadow:5px 0 0  hsl(189, 53%, 45%);
+        position: relative;
+    }
+    .double{
+        width: 35px;
+        height: 35px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:hsl(189, 53%, 45%) ;
+        border-radius: 50%;
+        position: absolute;
+        top: 11%;
+        left: 40%;
+    }
+   .author{
+    text-align: center;
+    margin-top: 10px;
+    color: #28104a;
+    font-weight: 900;
+    letter-spacing: 0.7px;
+   }
+   .job{
+    margin-top: 10px;
+    text-align: center;
+    color: rgb(61, 155, 147);
+    font-weight: 500;
+   }
+   .info{
+    margin-top: 10px;
+    color: rgb(91, 91, 198);
+     margin-inline: 55px 30px;
+     font-size: 15px;
+     font-family: sans-serif ;
+   }
+   .btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    margin-top: 10px;
+    
+   }
+   .prev-btn{
+    border: none;
+    color:hsl(189, 53%, 45%) ;
+    cursor: pointer;
+   }
+   .next-btn{
+    border: none;
+    color:hsl(189, 53%, 45%) ;
+    cursor: pointer;
+   }
+   .random-btn{
+    padding: 5px 8px;
+    background-color: hsl(189, 53%, 45%);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+   }
+   .btn-whips{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+   }
+   .random-btn:hover{
+    background-color: black;
+    color: white;
+   }
+

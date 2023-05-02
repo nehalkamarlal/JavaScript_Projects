@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    background-color: beige;
+    position: relative;
+}
+#x-mark{
+    position: absolute;
+    top: 1%;
+    left: 35%;
+    color: white;
+    animation: xbarrotate 1s ease-in-out infinite alternate;
+}
+.navigate-links{
+    display: none;
+    transition: 1s ease-in;
+}
+.navigate-links.active{
+        display: block;
+}
+nav{
+    width: 40%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+}
+#x-mark{
+      position: absolute;
+      top: 1%;
+      left: 35%;
+      color: white;
+      cursor: pointer;
+      animation: xbarrotate 1s ease-in-out infinite alternate;
+}
+@keyframes xbarrotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+#bars{
+    position: absolute;
+    top: 1%;
+    right: 3%;
+    cursor: pointer;
+    transform: 1.2s ease-in-out;
+    animation: scaling 1s ease-in-out  infinite alternate;    
+}
+@keyframes scaling {
+    
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.3);
+    }
+    100%{
+        transform: scale(1.7);
+    }
+}
+.nav-links{
+ 
+    margin: 10px 2px;
+   
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: white;
+}
+.nav-links li {
+    text-decoration: none;
+    color:white;
+    font-size: 19px;
+    padding: 15px 2px;
+    margin-inline: 10px 0;
+}
+.nav-links li:hover{
+    background-color: black;
+    color: white;
+    
+}
+#add{
+    color: green;
+}
+nav h1{
+    color:black;
+}
+.bottom-display{
+    position: absolute;
+    bottom: 12%;
+    left: 10%;
+    cursor: pointer;
+}
+.bottom-links{
+    list-style: none;
+     display: flex;
+     gap: 10px;
+     position: relative;
+     left: -20px;
+}
+.bottom-links li a{
+    text-decoration: none;
+    color: white;
+}
+@media screen and (min-width:700px){
+    nav{
+        width: 20%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        background-color: gray;
+    }
+    #x-mark{
+        position: absolute;
+        top: 1%;
+        left: 17%;
+        color: white;
+        cursor: pointer;
+        animation: xbarrotate 1s ease-in-out infinite alternate;
+  }
+ 
+}

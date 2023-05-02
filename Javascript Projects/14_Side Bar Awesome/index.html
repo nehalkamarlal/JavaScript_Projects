@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Side Bar Fanatasy Project Nehal Kumar Lal</title>
+    </head>
+    <script src="https://kit.fontawesome.com/a0536b0f9b.js"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <body>
+        <div class="container">
+            <i class="fa-solid fa-bars" id="bars"></i>
+            <nav class="navigate-links" id="navigate-links">
+                <h1 class="head">Code <span id="add">Addiction</span></h1>
+                <i class="fa-sharp fa-solid fa-delete-left" id="x-mark"></i>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#price">Price</a></li>
+                    <li><a href="#shoping">Shoping</a></li>
+                </ul>
+                <div class="bottom-display">
+                    <ul class="bottom-links">
+                        <li><a href="www.twitter.com"> <i class="fa-brands
+                                    fa-linkedin"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-github"></i></a></li>
+                    </ul>
+
+
+
+
+                </div>
+            </nav>
+
+        </div>
+
+    </body>
+    <script>
+        const bars=document.getElementById('bars');
+        const Xmark=document.getElementById('x-mark');
+        const links=document.getElementById('navigate-links');
+
+        bars.addEventListener('click',()=>{
+           links.classList.toggle('active');
+        })
+        Xmark.addEventListener('click',()=>{
+            if(links.classList.contains('active')){
+                links.classList.remove('active')
+            }
+        })
+    </script>
+</html>

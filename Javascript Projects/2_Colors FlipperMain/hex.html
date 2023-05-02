@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Colors Flipper Nehal Kumar lal</title>
+    </head>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .nav-links{
+        float: right;
+        
+
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: space-between;
+        gap: 30px;
+    }
+    li a{
+        text-decoration: none;
+        font-size:17px;
+        color:black;
+        cursor: pointer;
+    }
+    .backcolor{
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        background-color: black;
+        color: white;
+        box-shadow: 4px 4px 4px gray;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+     .btn{
+        padding: 10px 20px;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: bisque;
+     }
+</style>
+    <body>
+        <div class="container">
+            <h1> Color Flipper</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Simple</a></li>
+                    <li><a href="hex.html">Hex</a></li>
+                </ul>
+            </nav>
+            <main>
+                <h3 class="backcolor">BackgroundColor:<span class="color"
+                        id="color">white</span></h3>
+                <button class="btn" id="btn">Change Color</button>
+            </main>
+        </div>
+    </body>
+    <script>
+        const color=[1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F'];
+        const Colors=document.getElementById('color');
+        const btn=document.querySelector('.btn');
+        function getRandomGenerator(){
+            return Math.floor(Math.random()*color.length);
+        }
+         btn.addEventListener('click',function(){
+            let hexColor='#';
+            for(let i=0;i<6;i++)
+            {
+                hexColor += color[getRandomGenerator()];
+            }
+            document.body.style.backgroundColor=hexColor;
+            Colors.style.color=hexColor;
+            Colors.textContent=hexColor;
+         })
+    </script>
+</html>

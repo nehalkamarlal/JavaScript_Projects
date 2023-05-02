@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nav Bar project Nehal Kumar</title>
+    </head>
+    <script src="https://kit.fontawesome.com/a0536b0f9b.js"
+        crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    .container{
+        height: 80vh;
+        background-color: darkgrey;
+    }
+    
+    nav a{        
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        text-decoration: none;
+        color: black;
+        text-align: center;
+
+    }
+    nav a:hover{
+        background-color: darkkhaki;
+        display: block;
+    }
+    nav{
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 25px;
+          background-color: grey;
+          position: relative;
+    }
+    .first{
+        margin-top: 20px;
+    }
+    .menu-bars{
+        display: none;
+    }
+    #nav-bar{
+        position: absolute;
+        top: 0;
+        left: 20px;
+    }
+    .menu-bars.active{
+        display: flex;
+
+    }
+    @media screen and (min-width:560px) {
+          #menu-bar{
+            display: flex;
+            flex-direction: row;
+          }        
+          #nav-bar{
+            display: none;
+          }
+          .first{
+            margin-top: 0;
+          }
+    }
+   
+</style>
+    <body>
+        <div class="container" id="container">
+            <nav id="menu-bar" class="menu-bars">
+                <a class="first" href="#menu">Home</a>
+                <a href="#menu">About</a>
+                <a href="#menu">Price</a>
+                <a href="#menu">Shopping</a>
+                <a href="#">Contact</a>
+                <a href="#">Login</a>
+
+            </nav>
+            <i id="nav-bar" class="fa-solid fa-bars"></i>
+        </div>
+        <script>
+            const container=document.getElementById('container');
+            const menubar=document.getElementById('menu-bar');
+            const navBar=document.getElementById('nav-bar');
+            const menuBar=document.getElementsByClassName('menu-bars');
+            navBar.addEventListener('click',()=>{
+             menubar.classList.toggle('active');
+                 
+            })
+        </script>
+    </body>
+</html>
